@@ -15,7 +15,16 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        initTabLayout()
         initRecycler()
+    }
+
+    private fun initTabLayout() {
+        tabLayout.addTab(tabLayout.newTab().setText("Category 1"))
+        tabLayout.addTab(tabLayout.newTab().setText("Category 2"))
+        tabLayout.addTab(tabLayout.newTab().setText("Category 3"))
+        tabLayout.addTab(tabLayout.newTab().setText("Category 4"))
+        tabLayout.addTab(tabLayout.newTab().setText("Category 5"))
     }
 
     private fun initRecycler() {
@@ -25,12 +34,17 @@ class MainActivity : AppCompatActivity() {
                 "Category 1",
                 Item("Item 1"),
                 Item("Item 2"),
-                Item("Item 3")
+                Item("Item 3"),
+                Item("Item 4"),
+                Item("Item 5"),
+                Item("Item 6")
             ),
             Category(
                 "Category 2",
                 Item("Item 1"),
                 Item("Item 2"),
+                Item("Item 3"),
+                Item("Item 4"),
             ),
             Category(
                 "Category 3",
@@ -39,18 +53,25 @@ class MainActivity : AppCompatActivity() {
                 Item("Item 3"),
                 Item("Item 4"),
                 Item("Item 5"),
-                Item("Item 6")
+                Item("Item 6"),
+                Item("Item 7"),
+                Item("Item 8"),
             ),
             Category(
                 "Category 4",
                 Item("Item 1"),
                 Item("Item 2"),
-                Item("Item 3")
+                Item("Item 3"),
+                Item("Item 4"),
+                Item("Item 5"),
+                Item("Item 6")
             ),
             Category(
                 "Category 5",
                 Item("Item 1"),
                 Item("Item 2"),
+                Item("Item 4"),
+                Item("Item 5"),
             ),
         )
 
