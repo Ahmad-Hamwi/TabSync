@@ -1,4 +1,4 @@
-package com.ahmadhamwi.tabsync_test
+package com.ahmadhamwi.tabsync_test.util
 
 import com.google.android.material.tabs.TabLayout
 import java.util.*

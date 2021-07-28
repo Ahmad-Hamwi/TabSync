@@ -1,4 +1,4 @@
-package com.ahmadhamwi.tabsync_test
+package com.ahmadhamwi.tabsync_test.util
 
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
