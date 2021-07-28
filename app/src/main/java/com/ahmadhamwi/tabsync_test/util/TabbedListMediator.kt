@@ -36,8 +36,8 @@ class TabbedListMediator(
         if (mTabLayout.tabCount == 0)
             throw RuntimeException("Cannot attach with no tabs provided to TabLayout")
 
-        if (mIndices.isEmpty())
-            throw RuntimeException("Cannot attach with empty")
+        if (mIndices.size > mTabLayout.tabCount)
+            throw RuntimeException("Cannot attach using more indices than the available tabs")
 
         notifyIndicesChanged()
         mIsAttached = true
@@ -48,8 +48,18 @@ class TabbedListMediator(
         mIsAttached = false
     }
 
+    private fun reAttach() {
+        detach()
+        attach()
+    }
+
     fun updateMediatorWithNewIndices(newIndices: List<Int>): TabbedListMediator {
         mIndices = newIndices
+
+        if (mIsAttached) {
+            reAttach()
+        }
+
         return this
     }
 
