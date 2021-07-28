@@ -2,11 +2,14 @@
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/card"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_marginHorizontal="16dp"
     android:layout_marginVertical="8dp"
-    android:elevation="8dp">
+    android:outlineSpotShadowColor="@color/purple_500"
+    app:cardCornerRadius="4dp"
+    app:cardElevation="6dp">
 
     <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/textViewContent"
