@@ -7,7 +7,7 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.ahmadhamwi.tabsync_test.R
-import com.ahmadhamwi.tabsync_test.ui.model.Item
+import com.ahmadhamwi.tabsync_test.model.Item
 
 class ItemsAdapter(
     private val context: Context,

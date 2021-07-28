@@ -3,12 +3,11 @@ package com.ahmadhamwi.tabsync_test.ui
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.ahmadhamwi.tabsync_test.R
-import com.ahmadhamwi.tabsync_test.ui.model.Category
-import com.ahmadhamwi.tabsync_test.ui.model.Item
+import com.ahmadhamwi.tabsync_test.model.Category
+import com.ahmadhamwi.tabsync_test.model.Item
 import com.ahmadhamwi.tabsync_test.util.TabbedListMediator
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.activity_main.recyclerView
-import kotlinx.android.synthetic.main.item_category.*
 
 class MainActivity : AppCompatActivity() {
 

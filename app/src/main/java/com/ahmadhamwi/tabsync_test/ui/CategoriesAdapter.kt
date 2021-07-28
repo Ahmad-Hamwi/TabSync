@@ -7,7 +7,7 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.ahmadhamwi.tabsync_test.R
-import com.ahmadhamwi.tabsync_test.ui.model.Category
+import com.ahmadhamwi.tabsync_test.model.Category
 
 class CategoriesAdapter(
     private val context: Context,
