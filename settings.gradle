@@ -1,2 +1,3 @@
+include ':TabSync'
 include ':app'
 rootProject.name = "tabsync-test"

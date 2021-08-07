@@ -2,14 +2,17 @@ package com.ahmadhamwi.tabsync_test.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.recyclerview.widget.RecyclerView
 import com.ahmadhamwi.tabsync_test.R
 import com.ahmadhamwi.tabsync_test.model.Category
 import com.ahmadhamwi.tabsync_test.model.Item
-import com.ahmadhamwi.tabsync_test.util.TabbedListMediator
-import kotlinx.android.synthetic.main.activity_main.*
-import kotlinx.android.synthetic.main.activity_main.recyclerView
+import com.ahmadhamwi.tabsync.TabbedListMediator
+import com.google.android.material.tabs.TabLayout
 
 class MainActivity : AppCompatActivity() {
+
+    private lateinit var tabLayout: TabLayout
+    private lateinit var recyclerView: RecyclerView
 
     private val categories = mutableListOf(
         Category(
@@ -61,9 +64,15 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        initViews()
         initTabLayout()
         initRecycler()
         initMediator()
+    }
+
+    private fun initViews() {
+        tabLayout = findViewById(R.id.tabLayout)
+        recyclerView = findViewById(R.id.recyclerView)
     }
 
     private fun initTabLayout() {
@@ -77,6 +86,10 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun initMediator() {
-        TabbedListMediator(recyclerView, tabLayout, categories.indices.toList()).attach()
+        TabbedListMediator(
+            recyclerView,
+            tabLayout,
+            categories.indices.toList()
+        ).attach()
     }
 }
