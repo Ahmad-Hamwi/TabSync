@@ -1,4 +1,4 @@
-package com.ahmadhamwi.tabsync_test
+package com.ahmadhamwi.tabsync_example
 
 import org.junit.Test
 

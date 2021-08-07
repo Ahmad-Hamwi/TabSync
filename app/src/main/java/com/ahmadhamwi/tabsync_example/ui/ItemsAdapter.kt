@@ -1,4 +1,4 @@
-package com.ahmadhamwi.tabsync_test.ui
+package com.ahmadhamwi.tabsync_example.ui
 
 import android.content.Context
 import android.view.LayoutInflater
@@ -6,8 +6,8 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
-import com.ahmadhamwi.tabsync_test.R
-import com.ahmadhamwi.tabsync_test.model.Item
+import com.ahmadhamwi.tabsync_example.R
+import com.ahmadhamwi.tabsync_example.model.Item
 
 class ItemsAdapter(
     private val context: Context,

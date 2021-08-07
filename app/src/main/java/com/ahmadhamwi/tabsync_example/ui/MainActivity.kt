@@ -1,11 +1,11 @@
-package com.ahmadhamwi.tabsync_test.ui
+package com.ahmadhamwi.tabsync_example.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.recyclerview.widget.RecyclerView
-import com.ahmadhamwi.tabsync_test.R
-import com.ahmadhamwi.tabsync_test.model.Category
-import com.ahmadhamwi.tabsync_test.model.Item
+import com.ahmadhamwi.tabsync_example.R
+import com.ahmadhamwi.tabsync_example.model.Category
+import com.ahmadhamwi.tabsync_example.model.Item
 import com.ahmadhamwi.tabsync.TabbedListMediator
 import com.google.android.material.tabs.TabLayout
 

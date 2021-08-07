@@ -1,4 +1,4 @@
-package com.ahmadhamwi.tabsync_test
+package com.ahmadhamwi.tabsync_example
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4

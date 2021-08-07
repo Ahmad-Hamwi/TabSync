@@ -1,4 +1,4 @@
-package com.ahmadhamwi.tabsync_test.util
+package com.ahmadhamwi.tabsync_example.util
 
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.LinearSmoothScroller
