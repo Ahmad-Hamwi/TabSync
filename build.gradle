@@ -4,6 +4,7 @@ buildscript {
     repositories {
         google()
         jcenter()
+        mavenCentral()
     }
     dependencies {
         classpath "com.android.tools.build:gradle:4.1.1"
@@ -11,6 +12,9 @@ buildscript {
 
         // NOTE: Do not place your application dependencies here; they belong
         // in the individual module build.gradle files
+
+        classpath 'com.vanniktech:gradle-maven-publish-plugin:0.18.0' // NEW
+        classpath 'org.jetbrains.dokka:dokka-gradle-plugin:1.4.10.2' // NEW
     }
 }
 
@@ -18,6 +22,61 @@ allprojects {
     repositories {
         google()
         jcenter()
+    }
+
+    plugins.withId("com.vanniktech.maven.publish") {
+        mavenPublish {
+            sonatypeHost = "S01"
+
+            publishing {
+                repositories {
+                    maven {
+                        def releasesRepoUrl = "$buildDir/repos/releases"
+                        def snapshotsRepoUrl = "$buildDir/repos/snapshots"
+                        url = version.endsWith('SNAPSHOT') ? snapshotsRepoUrl : releasesRepoUrl
+                    }
+                }
+            }
+        }
+    }
+
+    plugins.withId("com.vanniktech.maven.publish.base") {
+        group = "io.github.ahmad-hamwi"
+        version = "1.0.0"
+
+        mavenPublishing {
+            publishToMavenCentral("S01")
+
+            // Will only apply to non snapshot builds.
+            // Uses credentials as described above, supports both regular and in memory signing.
+            signAllPublications()
+
+            pom {
+                name = "TabSync"
+                description = "A lightweight synchronizer between Android's TabLayout and RecyclerView."
+                inceptionYear = "2021"
+                url = "https ://github.com/Ahmad-Hamwi/TabSync/"
+                licenses {
+                    license {
+                        name = "The Apache License, Version 2.0"
+                        url = "http://www.apache.org/licenses/LICENSE-2.0.txt"
+                        distribution = "http://www.apache.org/licenses/LICENSE-2.0.txt"
+                    }
+                }
+                developers {
+                    developer {
+                        id = "Ahmad-Hamwi"
+                        name = "Ahmad Hamwi"
+                        url = "https://github.com/Ahmad-Hamwi/"
+                    }
+                }
+                scm {
+                    url = "https://github.com/Ahmad-Hamwi/TabSync/"
+                    connection = "scm:git:git://github.com/Ahmad-Hamwi/TabSync.git"
+                    developerConnection = "scm:git:ssh://git@github.com/Ahmad-Hamwi/TabSync.git"
+                }
+            }
+        }
     }
 }
 
