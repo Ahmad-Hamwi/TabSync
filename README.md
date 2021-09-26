@@ -86,3 +86,9 @@ To get the smooth scroll flag, call the getter isSmoothScroll()
 ```kotlin
 val isSmoothScrolling = mediator.isSmoothScroll()
 ```
+
+# License
+
+Copyright (C) 2021 Ahmad Hamwi
+
+Licensed under the Apache License, Version 2.0
