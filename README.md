@@ -5,9 +5,9 @@ A lightweight synchronizer between Android's TabLayout and RecyclerView.
 The behavior of the synchronizer is that as you scroll through the RecyclerView’s items, the corresponding TabLayout items will be selected automatically, and vice-versa; when pressing on a TabLayout item, we want the RecyclerView to scroll to the corresponding item to view.
 
 
-![Telegram example](https://media.giphy.com/media/NWCPDzplCS4BpMd9Tc/giphy.gif)
 ![Mediator attached](https://media.giphy.com/media/T1cDzfvY3KzQn7kp5d/giphy.gif)
-![Mediator attached with smooth scroll](https://giphy.com/gifs/MTS4wKN5EenEqgCPw7)
+![Mediator attached with smooth scroll](https://media.giphy.com/media/MTS4wKN5EenEqgCPw7/giphy.gif)
+
 
 ## How do I get set up? ##
 
