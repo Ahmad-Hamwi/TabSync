@@ -50,8 +50,8 @@ val mediator = TabbedListMediator(
 ```
 
 Make sure that RecyclerView and the TabLayout are instantiated with their data (adapter with its
-data for RecyclerView, and tabs for the TabLayout) and call the attach method. Note that the tabs
-count must not be less that the passed indices.
+data for RecyclerView, and tabs for the TabLayout) and call the attach method. Note that the tabs'
+count must not be less than the number of the passed indices.
 
 ```kotlin
 method.attach()
