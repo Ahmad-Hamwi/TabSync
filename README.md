@@ -1,4 +1,4 @@
-# RecyclerViewSwipeDecorator #
+# TabSync #
 
 A lightweight synchronizer between Android's TabLayout and RecyclerView.
 
