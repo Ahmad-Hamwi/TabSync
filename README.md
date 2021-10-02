@@ -8,6 +8,8 @@ The behavior of the synchronizer is that as you scroll through the RecyclerViewâ
 ![Mediator attached](https://media.giphy.com/media/T1cDzfvY3KzQn7kp5d/giphy.gif)
 ![Mediator attached with smooth scroll](https://media.giphy.com/media/MTS4wKN5EenEqgCPw7/giphy.gif)
 
+## Tutorial ##
+Here's a [Medium Article](https://ahmad-hamwi.medium.com/synchronize-recyclerview-with-tablayout-3c5da4f3b18b) demonstrating the example in this repo step-by-step.
 
 ## How do I get set up? ##
 
@@ -38,8 +40,7 @@ dependencies {
 
 Here is a non-comprehensive guide to TabSync:
 
-Create an TabbedListMediator, and pass a RecyclerView, a TabLayout, and a list of indices of the
-RecyclerView's items that you want to the tabs with.
+Create an TabbedListMediator, and pass a RecyclerView, a TabLayout, and a list of RecyclerView's items indices that you wish to sync the tabs with.
 
 ```kotlin
 val mediator = TabbedListMediator(
@@ -86,6 +87,9 @@ To get the smooth scroll flag, call the getter isSmoothScroll()
 ```kotlin
 val isSmoothScrolling = mediator.isSmoothScroll()
 ```
+
+## Contributing ##
+This library is made to help other developers out in their app developments, feel free to contribute by suggesting ideas and creating issues and PRs that would make this library more helpful.
 
 # License
 
