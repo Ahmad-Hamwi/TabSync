@@ -182,9 +182,9 @@ class TabbedListMediator(
                         if (!mTabLayout.getTabAt(i)!!.isSelected) {
                             mTabLayout.getTabAt(i)!!.select()
                         }
-                        if (linearLayoutManager.findLastCompletelyVisibleItemPosition() == mIndices.size - 1) {
-                            if (!mTabLayout.getTabAt(mIndices[mIndices.size - 1])!!.isSelected) {
-                                mTabLayout.getTabAt(mIndices[mIndices.size - 1])!!.select()
+                        if (linearLayoutManager.findLastCompletelyVisibleItemPosition() == mIndices[mIndices.size - 1]) {
+                            if (!mTabLayout.getTabAt(mIndices.size - 1)!!.isSelected) {
+                                mTabLayout.getTabAt(mIndices.size - 1)!!.select()
                             }
                             return
                         }
