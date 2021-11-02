@@ -32,7 +32,7 @@ Then add the dependency
 
 ```groovy
 dependencies {
-    implementation 'io.github.ahmad-hamwi:tabsync:1.0.0'
+    implementation 'io.github.ahmad-hamwi:tabsync:1.0.1'
 }
 ```
 
