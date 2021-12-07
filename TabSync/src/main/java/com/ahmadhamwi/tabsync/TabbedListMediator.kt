@@ -1,9 +1,7 @@
 package com.ahmadhamwi.tabsync
 
 import androidx.recyclerview.widget.LinearLayoutManager
-import androidx.recyclerview.widget.LinearSmoothScroller
 import androidx.recyclerview.widget.RecyclerView
-import androidx.recyclerview.widget.RecyclerView.SmoothScroller
 import com.google.android.material.tabs.TabLayout
 import com.google.android.material.tabs.TabLayout.OnTabSelectedListener
 
@@ -30,13 +28,6 @@ class TabbedListMediator(
 
     private var mRecyclerState = RecyclerView.SCROLL_STATE_IDLE
     private var mTabClickFlag = false
-
-    private val smoothScroller: SmoothScroller =
-        object : LinearSmoothScroller(mRecyclerView.context) {
-            override fun getVerticalSnapPreference(): Int {
-                return SNAP_TO_START
-            }
-        }
 
     private var tabViewCompositeClickListener: TabViewCompositeClickListener =
         TabViewCompositeClickListener(mTabLayout)
@@ -133,8 +124,8 @@ class TabbedListMediator(
             val position = tab.position
 
             if (mIsSmoothScroll) {
-                smoothScroller.targetPosition = mIndices[position]
-                mRecyclerView.layoutManager?.startSmoothScroll(smoothScroller)
+
+                mRecyclerView.smoothScrollToPosition(mIndices[position])
             } else {
                 (mRecyclerView.layoutManager as LinearLayoutManager?)?.scrollToPositionWithOffset(
                     mIndices[position],
