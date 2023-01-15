@@ -1,7 +1,7 @@
 plugins {
-
     id 'com.android.library'
     id 'org.jetbrains.kotlin.android'
+    id 'com.vanniktech.maven.publish'
 }
 
 android {
@@ -52,4 +52,43 @@ dependencies {
     androidTestImplementation 'androidx.test.ext:junit:1.1.5'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
     androidTestImplementation "androidx.compose.ui:ui-test-junit4:$compose_version"
+}
+
+plugins.withId("com.vanniktech.maven.publish.base") {
+    group = "io.github.ahmad-hamwi"
+    version = "1.0.0"
+
+    mavenPublishing {
+        publishToMavenCentral("S01")
+
+        // Will only apply to non snapshot builds.
+        // Uses credentials as described above, supports both regular and in memory signing.
+        signAllPublications()
+
+        pom {
+            name = "tabsync-compose"
+            description = "A lightweight synchronizer between Android Jetpack Compose's LazyListState and ScrollableTabRow"
+            inceptionYear = "2023"
+            url = "https ://github.com/Ahmad-Hamwi/TabSync/"
+            licenses {
+                license {
+                    name = "The Apache License, Version 2.0"
+                    url = "http://www.apache.org/licenses/LICENSE-2.0.txt"
+                    distribution = "http://www.apache.org/licenses/LICENSE-2.0.txt"
+                }
+            }
+            developers {
+                developer {
+                    id = "Ahmad-Hamwi"
+                    name = "Ahmad Hamwi"
+                    url = "https://github.com/Ahmad-Hamwi/"
+                }
+            }
+            scm {
+                url = "https://github.com/Ahmad-Hamwi/TabSync/"
+                connection = "scm:git:git://github.com/Ahmad-Hamwi/TabSync.git"
+                developerConnection = "scm:git:ssh://git@github.com/Ahmad-Hamwi/TabSync.git"
+            }
+        }
+    }
 }
