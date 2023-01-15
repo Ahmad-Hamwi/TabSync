@@ -1,3 +1,5 @@
+rootProject.name = "tabsync"
 include ':TabSync'
 include ':app'
-rootProject.name = "tabsync"
+include ':TabSyncCompose'
+include ':compose-app'
