@@ -4,8 +4,8 @@ A lightweight synchronizer between Android's Tabs and Lists!
 
 ## Available on the View System & Jetpack Compose ##
 
-- On Android's View system, synchronization is made between TabLayout and RecyclerView
-- Android's Jetpack Compose, the synchronization is made between any LazeListState-based Composable (e.g. LazyColumn) and an index-based Composable (e.g. ScrollableTabRow).
+- On Android's [View system](https://github.com/Ahmad-Hamwi/TabSync#setup-for-the-view-system), synchronization is made between TabLayout and RecyclerView
+- Android's [Jetpack Compose](https://github.com/Ahmad-Hamwi/TabSync#setup-for-jetpack-compose), the synchronization is made between any LazeListState-based Composable (e.g. LazyColumn) and an index-based Composable (e.g. ScrollableTabRow).
 
 ## Behaviour expected ##
 
