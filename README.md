@@ -17,7 +17,7 @@ As you scroll through items, the corresponding tabs will be selected automatical
 
 ## Articles ##
 - RecyclerView and TabLayout: Here's a [Medium Article](https://ahmad-hamwi.medium.com/synchronize-recyclerview-with-tablayout-3c5da4f3b18b) demonstrating the example in this repo step-by-step.
-- Jetpack compose: Here's the Jetpack Compose version [Medium Article](https://ahmad-hamwi.medium.com/synchronize-recyclerview-with-tablayout-3c5da4f3b18b) demonstrating the example in this repo step-by-step, and explaining how it's working.
+- Jetpack compose: Here's the Jetpack Compose version [Medium Article](https://proandroiddev.com/jetpack-compose-synchronize-lazyliststate-with-scrollabletabrow-22ff1f8577dc) demonstrating the example in this repo step-by-step, and explaining how it's working.
 
 # Setup for the View system #
 
