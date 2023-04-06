@@ -2,9 +2,9 @@ package com.ahmadhamwi.tabsync_compose
 
 import androidx.compose.foundation.lazy.LazyListState
 
-fun LazyListState.findFirstFullyVisibleItemIndex(): Int = findFullyVisibleItemIndex(reversed = true)
+fun LazyListState.findFirstFullyVisibleItemIndex(): Int = findFullyVisibleItemIndex(reversed = false)
 
-fun LazyListState.findLastFullyVisibleItemIndex(): Int = findFullyVisibleItemIndex(reversed = false)
+fun LazyListState.findLastFullyVisibleItemIndex(): Int = findFullyVisibleItemIndex(reversed = true)
 
 fun LazyListState.findFullyVisibleItemIndex(reversed: Boolean): Int {
     layoutInfo.visibleItemsInfo.run { if (reversed) reversed() else this }.forEach { itemInfo ->
