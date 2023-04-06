@@ -56,7 +56,7 @@ dependencies {
 
 plugins.withId("com.vanniktech.maven.publish.base") {
     group = "io.github.ahmad-hamwi"
-    version = "1.0.0"
+    version = "1.0.1"
 
     mavenPublishing {
         publishToMavenCentral("S01")
