@@ -1,11 +1,22 @@
-# TabSync #
+<h1 align="center">TabSync</h1>
 
-A lightweight synchronizer between Android's Tabs and Lists! 
+<p align="center">
+    <a href="https://opensource.org/licenses/Apache-2.0"><img alt="License" src="https://img.shields.io/badge/License-Apache%202.0-blue.svg"/></a>
+    <a href="https://android-arsenal.com/api?level=21"><img alt="API" src="https://img.shields.io/badge/API-21%2B-brightgreen.svg?style=flat"/></a>
+    <a href="https://proandroiddev.com/synchronize-recyclerview-with-tablayout-3c5da4f3b18b"><img alt="Medium" src="https://skydoves.github.io/badges/Story-Medium.svg"/></a>
+    <a href="https://proandroiddev.com/jetpack-compose-synchronize-lazyliststate-with-scrollabletabrow-22ff1f8577dc"><img alt="Medium" src="https://skydoves.github.io/badges/Story-Medium.svg"/></a>
 
-## Available on the View System & Jetpack Compose ##
+<br>
 
-- On Android's [View system](https://github.com/Ahmad-Hamwi/TabSync#setup-for-the-view-system), synchronization is made between TabLayout and RecyclerView
-- Android's [Jetpack Compose](https://github.com/Ahmad-Hamwi/TabSync#setup-for-jetpack-compose), the synchronization is made between any LazeListState-based Composable (e.g. LazyColumn) and an index-based Composable (e.g. ScrollableTabRow).
+<p align="center">
+    <a href="https://www.buymeacoffee.com/ahmadhamwi" target="_blank"><img src="https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png" alt="Buy Me A Coffee" />
+</p>
+    
+<p align="center">
+    A lightweight synchronizer between Android's Tabs and Lists! Available for 
+    <a href="https://github.com/Ahmad-Hamwi/TabSync#setup-for-the-view-system">Views</a> 
+    and <a href="https://github.com/Ahmad-Hamwi/TabSync#setup-for-jetpack-compose">Jetpack Compose</a>!
+</p>
 
 ## Behaviour expected ##
 
@@ -14,6 +25,12 @@ As you scroll through items, the corresponding tabs will be selected automatical
 
 ![Mediator attached](https://media.giphy.com/media/T1cDzfvY3KzQn7kp5d/giphy.gif)
 ![Mediator attached with smooth scroll](https://media.giphy.com/media/MTS4wKN5EenEqgCPw7/giphy.gif)
+
+
+## Available on the View System & Jetpack Compose ##
+
+- On Android's [View](https://github.com/Ahmad-Hamwi/TabSync#setup-for-the-view-system), synchronization is made between TabLayout and RecyclerView
+- Android's [Jetpack Compose](https://github.com/Ahmad-Hamwi/TabSync#setup-for-jetpack-compose), the synchronization is made between any LazeListState-based Composable (e.g. LazyColumn) and an index-based Composable (e.g. ScrollableTabRow).
 
 ## Articles ##
 - RecyclerView and TabLayout: Here's a [Medium Article](https://ahmad-hamwi.medium.com/synchronize-recyclerview-with-tablayout-3c5da4f3b18b) demonstrating the example in this repo step-by-step.
